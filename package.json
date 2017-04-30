@@ -1,0 +1,21 @@
+{
+  "name": "backbone-firebase-skeleton",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "async": "*",
+    "body-parser": "*",
+    "express": "*",
+    "firebase-admin": "^4.2.1",
+    "http": "*",
+    "mongoose": "*",
+    "path": "*"
+  },
+  "author": "",
+  "license": "ISC"
+}

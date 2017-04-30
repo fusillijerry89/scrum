@@ -1,0 +1,35 @@
+<link rel="stylesheet" type="text/css" href="lib/jquery-ui.min.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+
+<script src="lib/head.min.js"></script>
+<script>
+    head.load("https://code.jquery.com/jquery-3.2.1.min.js", "lib/jquery-ui.min.js", "lib/handlebars.min.js", "lib/underscore-min.js", "lib/backbone.js", "lib/backbone.firebase.js", "lib/firebase.js", "index.js", function() {
+
+    });
+</script>
+
+<script id="newNode-tpl" type="text/x-handlebars-template">
+  <form action="#" id="newNode-form">
+    <textarea rows="4" cols="30"></textarea>
+    <input type="submit" value="Submit" class="submit">
+  </form>
+</script>
+
+<script id="editNode-tpl" type="text/x-handlebars-template">
+  <form action="#" id="editNode-form">
+    <textarea rows="4" cols="30"></textarea>
+    <input type="submit" value="Submit" class="submit">
+  </form>
+</script>
+
+<script id="node-tpl" type="text/x-handlebars-template">
+  <div class="node" id="{{ id }}" style="left : {{ left }}; top : {{ top }};">
+    <a class="ex">X</a>
+    <a class="edit">-</a>
+    <span>{{ text }}</span>
+  </div>
+</script>
+
+<div id="container">
+  <div id="canvas"></div>
+</div>
